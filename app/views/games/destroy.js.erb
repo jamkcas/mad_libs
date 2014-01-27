@@ -1,0 +1,5 @@
+var id = <%= params[:id] %>;
+
+$('li[data-id=' + id + ']').fadeOut(500, function() {
+  $(this).remove();
+});

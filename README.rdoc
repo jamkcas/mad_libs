@@ -1,0 +1,1 @@
+App designed to simulate the classic mad-lib game. The game uses phrases posted on FML website, and prompts user for a noun, verb, adjective, and proper noun to insert into the phrases.

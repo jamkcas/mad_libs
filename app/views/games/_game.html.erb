@@ -1,0 +1,36 @@
+<li data-id='<%= game.id %>'>
+  <% sentence = rand(10) %>
+  <% if sentence == 0 %>
+  <p>Today, <%= game.proper_noun %> found that my Facebook account had been <%= game.verb %>, and all <%= game.proper_noun %>'s friends were deleted. As <%= game.proper_noun %> tried to add them all back, Facebook reported <%= game.proper_noun %> as a <%= game.adjective %> hacker for adding too many <%= game.noun %> too quickly.</p>
+
+  <% elsif sentence == 1 %>
+  <p>Today, <%= game.proper_noun %> was offered a <%= game.noun %> as a school crossing guard. <%= game.proper_noun %> has a $200,000 degree in Economics from a top 20 University and was offered a <%= game.noun %> to hold a stop sign and <%= game.verb %> a <%= game.adjective %> vest. <%= game.proper_noun %> was tempted to accept.</p>
+
+  <% elsif sentence == 2 %>
+  <p>Today, <%= game.proper_noun %> thought it would be nice to park my new <%= game.noun %> under a big, <%= game.adjective %> oak tree to prevent it from <%= game.verb %> in the sun. The big, <%= game.adjective %> oak tree thought it would be nice to shed a massive branch on top of my new <%= game.noun %>.</p>
+
+  <% elsif sentence == 3 %>
+  <p>Today, my blind friend bragged to a group of <%= game.noun %> that she knew all of us by smell. We all took turns <%= game.verb %> in front of her, and she would tell us who we were. When <%= game.proper_noun %> got in front of her, she thought <%= game.proper_noun %> was <%= game.proper_noun %>'s <%= game.adjective %> dog.</p>
+
+  <% elsif sentence == 4 %>
+  <p>Today, I stayed at <%= game.proper_noun %>'s house after mine was broken into. The robber took my <%= game.noun %>, jewellery, and tons of <%= game.adjective %> clothes. When I walked into his house, I was greeted by <%= game.proper_noun %>'s brother, <%= game.verb %> one of my stolen shirts.</p>
+
+  <% elsif sentence == 5 %>
+  <p>Today, I was <%= game.verb %> at a daycare. There was a 6-year-old pretending to be my doctor, holding a little, <%= game.adjective %> <%= game.noun %>. <%= game.proper_noun %> then, without warning, quickly shoved it deep into my ear. The last thing I heard was <%= game.proper_noun %>'s giggle. I think I'm deaf.</p>
+
+  <% elsif sentence == 6 %>
+  <p>Today, a thirty-something guy swaggered into my workplace. He was wearing <%= game.adjective %> shades and torn <%= game.noun %>, and claimed to be our new boss. I called <%= game.proper_noun %> to throw him out, at which point he produced his ID and let me know I'd be <%= game.verb %> an employee review session next week.</p>
+
+  <% elsif sentence == 7 %>
+  <p>Today, I was <%= game.verb %> around on Photo Booth, using <%= game.adjective %> <%= game.noun %>s on pictures of myself. My friend <%= game.proper_noun %> clicked on one and I thought to myself that it was a really ugly effect. Then I noticed that it was set on normal.</p>
+
+  <% elsif sentence == 8 %>
+  <p>Today, my <%= game.proper_noun %> wanted to take me to a movie after days of not seeing me. This <%= game.adjective %> date involved me paying for <%= game.noun %> and my movie ticket when <%= game.proper_noun %> ran out of cash again. <%= game.proper_noun %> then dumped me as we left the theater <%= game.verb %> to his car. Well, I financed my own breakup date.</p>
+
+  <% elsif sentence == 9 %>
+  <p>Today, the director of the play <%= game.proper_noun %>'s in decided to show us an example of the type of shoes we would be <%= game.verb %> in the show. She brings in a pair of hideous black <%= game.adjective %> <%= game.noun %>, and <%= game.proper_noun %> remarks how ugly they are. They're her own favorite <%= game.noun %>. <%= game.proper_noun %> had to carpool with her after rehearsal.</p>
+
+  <% end %>
+
+  <%= link_to 'Delete', game_path(game), method: 'delete', remote: true %>
+</li>

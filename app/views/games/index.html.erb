@@ -1,0 +1,29 @@
+<header><h1>M<span>a</span>d L<span>i</span>bs</h1></header>
+
+<div class='play_button'>
+  <h3>Play game</h3>
+</div>
+
+<div class='game display clearfix'>
+  <div class='form'>
+    <%= form_for @game, remote: true do |f| %>
+
+      <%= f.text_field :noun, placeholder: 'Please enter a noun...' %>
+      <%= f.text_field :verb, placeholder: 'Please enter a verb...' %>
+      <%= f.text_field :proper_noun, placeholder: 'Please enter a proper noun...' %>
+      <%= f.text_field :adjective, placeholder: 'Please enter an adjective...' %>
+      <%= f.submit 'Enter Words', :class => 'submit' %>
+
+    <% end %>
+    <p class='clear'>Clear All</p>
+  </div>
+
+  <div class='gameWindow clearfix'>
+
+    <ul id='sentences'>
+      <% @games.reverse.first(5).each do |g| %>
+        <%= render g, game: g %>
+      <% end %>
+    </ul>
+  </div>
+</div>
